@@ -21,17 +21,6 @@ public class ScheduleService {
         return schedules;
     }
 
-    // 특정 날짜의 과거 일정 조회 메서드
-    public List<Schedule> getPastSchedules(String date) {
-        List<Schedule> pastSchedules = new ArrayList<>();
-        for (Schedule schedule : schedules) {
-            if (schedule.getDate().equals(date)) {
-                pastSchedules.add(schedule);
-            }
-        }
-        return pastSchedules;
-    }
-
     // 현재 활성 일정을 반환하는 메서드
     public List<Schedule> getActiveSchedules() {
         List<Schedule> activeSchedules = new ArrayList<>();

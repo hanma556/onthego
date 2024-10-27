@@ -41,7 +41,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         // 알림 빌더
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, channelId)
                 .setSmallIcon(android.R.drawable.ic_dialog_info)
-                .setContentTitle("일정 알림")
+                .setContentTitle("준비해야 할 시간입니다! 오늘의 날씨와 일정을 확인하세요!")
                 .setContentText(event)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentIntent(pendingIntent)
